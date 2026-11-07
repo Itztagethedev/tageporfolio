@@ -1,85 +1,101 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#0d0c0d">
-<meta name="description" content="Tage — developer from Norway, building Minecraft plugins, server tools and software.">
-<title>Tage — Developer</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0c">
+  <meta name="description" content="Tage — developer from Norway interested in Minecraft, software and the web.">
+  <title>Tage — Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-<div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
-<div class="site-wrap" id="top">
-  <header class="header">
-    <a class="logo" href="#top" aria-label="Tage home">t<span>.</span></a>
-    <nav class="nav" aria-label="Main navigation">
-      <a href="#about">About</a><a href="#work">What I do</a><a href="#contact">Contact</a>
-    </nav>
-    <a class="github-link" href="https://github.com/Itztagethedev" target="_blank" rel="noreferrer">GITHUB <span>↗</span></a>
-    <button class="menu" aria-label="Toggle navigation" aria-expanded="false"><i></i><i></i></button>
-  </header>
+  <div class="page-shell" id="top">
+    <header class="topbar">
+      <a class="wordmark" href="#top" aria-label="Tage home">tage<span>.</span></a>
+      <nav class="navigation" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#interests">Interests</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="top-link" href="https://github.com/Itztagethedev" target="_blank" rel="noreferrer">GITHUB <span>↗</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-copy">
-        <div class="availability"><span class="status-dot"></span> DEVELOPER FROM NORWAY</div>
-        <h1>Hey, I'm<br><span class="name">Tage<span class="period">.</span></span></h1>
-        <p class="hero-text">I build things for Minecraft and the web. Mostly plugins, server tools, bots and ideas that turn into something useful.</p>
-        <div class="hero-buttons">
-          <a class="btn btn-main" href="#contact">Get in touch <span>↗</span></a>
-          <a class="btn btn-outline" href="https://github.com/Itztagethedev" target="_blank" rel="noreferrer">My GitHub <span>↗</span></a>
+    <main>
+      <section class="intro" aria-labelledby="intro-title">
+        <div class="intro-kicker"><span class="kicker-line"></span> DEVELOPER / NORWAY</div>
+        <h1 id="intro-title">Hey, I'm <span>Tage.</span></h1>
+        <p class="intro-description">I like building things that are useful, thoughtful, and fun to use — from Minecraft plugins and server tools to bots and websites.</p>
+        <div class="intro-actions">
+          <a class="button button-primary" href="https://discord.gg/frostmine" target="_blank" rel="noreferrer">Find me on Discord <span>↗</span></a>
+          <a class="button button-quiet" href="https://github.com/Itztagethedev" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
         </div>
-        <div class="hero-footnote"><span>BASED IN NORWAY</span><span>BUILDING · LEARNING · IMPROVING</span></div>
-      </div>
-      <aside class="profile-panel">
-        <div class="profile-top"><span>PROFILE</span><span>NO. 001</span></div>
-        <div class="profile-monogram">t<span>.</span></div>
-        <h2>tage_gutten</h2>
-        <p class="profile-role">Independent developer</p>
-        <div class="profile-divider"></div>
-        <div class="profile-detail"><span>LOCATION</span><b>Norway</b></div>
-        <div class="profile-detail"><span>INTERESTS</span><b>Minecraft · Software · Web</b></div>
-        <div class="profile-bottom"><span class="tiny-dot"></span> ALWAYS WORKING ON SOMETHING</div>
-      </aside>
-    </section>
+        <div class="intro-meta"><span>BASED IN NORWAY</span><span>INTERESTED IN BUILDING BETTER THINGS</span></div>
+      </section>
 
-    <section class="section about-section" id="about">
-      <div class="section-heading"><div><span class="overline">A LITTLE ABOUT ME</span><h2>Behind the screen<span>.</span></h2></div><span class="section-id">01 — ABOUT</span></div>
-      <div class="about-layout">
-        <p class="about-lead">I enjoy making things, breaking them, figuring out why — and making them better.</p>
-        <div class="about-body">
-          <p>I'm Tage, a developer from Norway. Most of what I work on is connected to Minecraft: server plugins, custom features and tools that make running a community easier.</p>
-          <p>Outside of that, I like building Discord bots, experimenting with web development and learning new ways to solve problems. I'm always working on something and trying to improve along the way.</p>
+      <section class="content-section about" id="about">
+        <div class="section-top">
+          <span class="section-number">01</span>
+          <div><p class="eyebrow">A LITTLE INTRODUCTION</p><h2>More about me</h2></div>
         </div>
-      </div>
-    </section>
-
-    <section class="section work-section" id="work">
-      <div class="section-heading"><div><span class="overline">WHAT KEEPS ME BUSY</span><h2>Things I work on<span>.</span></h2></div><span class="section-id">02 — INTERESTS</span></div>
-      <div class="work-list">
-        <article class="work-item"><div class="work-icon">01</div><div class="work-copy"><h3>Minecraft development</h3><p>Paper plugins, server features, gameplay systems and custom mechanics.</p></div><span class="work-label">MINECRAFT</span><span class="work-arrow">↗</span></article>
-        <article class="work-item"><div class="work-icon">02</div><div class="work-copy"><h3>Software & automation</h3><p>Useful tools, integrations and Discord bots that make everyday tasks easier.</p></div><span class="work-label">SOFTWARE</span><span class="work-arrow">↗</span></article>
-        <article class="work-item"><div class="work-icon">03</div><div class="work-copy"><h3>Web development</h3><p>Building clean, responsive websites and learning through hands-on projects.</p></div><span class="work-label">WEB</span><span class="work-arrow">↗</span></article>
-      </div>
-    </section>
-
-    <section class="contact-section" id="contact">
-      <div class="contact-inner">
-        <div><span class="overline">HAVE A QUESTION OR AN IDEA?</span><h2>Let's talk<span>.</span></h2><p>Whether it's about development, Minecraft or just a quick hello — feel free to reach out.</p></div>
-        <div class="contact-actions">
-          <a class="contact-link" href="https://discord.gg/frostmine" target="_blank" rel="noreferrer"><span class="contact-symbol">◈</span><span><b>Discord</b><small>Join the community</small></span><span class="contact-arrow">↗</span></a>
-          <a class="contact-link" href="https://github.com/Itztagethedev" target="_blank" rel="noreferrer"><span class="contact-symbol">⌘</span><span><b>GitHub</b><small>See my profile</small></span><span class="contact-arrow">↗</span></a>
+        <div class="about-copy">
+          <p class="about-statement">Curious by nature.<br><span>Developer by choice.</span></p>
+          <div class="body-copy">
+            <p>I'm Tage, a developer from Norway who enjoys turning ideas into working things. A lot of my time goes into Minecraft development, especially plugins, server features and tools.</p>
+            <p>I also enjoy working with Discord bots and web development. I like learning by building, solving problems, and improving the details until things feel right.</p>
+          </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <footer class="footer"><a class="logo" href="#top">t<span>.</span></a><span>DESIGNED & BUILT BY TAGE</span><span>© <b id="year">2026</b></span></footer>
-</div>
+      <section class="content-section interests" id="interests">
+        <div class="section-top">
+          <span class="section-number">02</span>
+          <div><p class="eyebrow">WHAT I ENJOY</p><h2>Areas of interest</h2></div>
+        </div>
+        <div class="interest-grid">
+          <article class="interest-card">
+            <span class="card-index">01 / GAME DEVELOPMENT</span>
+            <div class="card-mark">✳</div>
+            <h3>Minecraft</h3>
+            <p>Plugins, server systems, custom mechanics and improving the player experience.</p>
+          </article>
+          <article class="interest-card">
+            <span class="card-index">02 / AUTOMATION</span>
+            <div class="card-mark">⌘</div>
+            <h3>Software & bots</h3>
+            <p>Discord bots, useful tools and small automations that solve real problems.</p>
+          </article>
+          <article class="interest-card">
+            <span class="card-index">03 / THE WEB</span>
+            <div class="card-mark">↗</div>
+            <h3>Web development</h3>
+            <p>Building responsive websites and exploring how design and code work together.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="contact-copy">
+          <p class="eyebrow">HAVE SOMETHING IN MIND?</p>
+          <h2>Let's connect<span>.</span></h2>
+          <p>Got a question, an idea, or just want to say hello? You can find me here.</p>
+        </div>
+        <div class="contact-links">
+          <a href="https://discord.gg/frostmine" target="_blank" rel="noreferrer"><span class="contact-label">DISCORD</span><strong>Join the community</strong><span class="external">↗</span></a>
+          <a href="https://github.com/Itztagethedev" target="_blank" rel="noreferrer"><span class="contact-label">GITHUB</span><strong>Follow what I do</strong><span class="external">↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="wordmark" href="#top">tage<span>.</span></a>
+      <span>MADE WITH CARE IN NORWAY</span>
+      <span>© <span id="year">2026</span></span>
+    </footer>
+  </div>
 </body>
 </html>
