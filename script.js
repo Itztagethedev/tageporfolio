@@ -19,3 +19,38 @@ if (toggle && nav) {
 
 const year = document.querySelector("#year");
 if (year) year.textContent = new Date().getFullYear();
+
+const requestForm = document.querySelector("#request-form");
+const formNote = document.querySelector("#form-note");
+
+if (requestForm && formNote) {
+  requestForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const formData = new FormData(requestForm);
+    const message = [
+      "Hey Tage! I'd like to ask about working with you.",
+      "",
+      "Name: " + formData.get("name"),
+      "Service: " + formData.get("type"),
+      "Project details: " + formData.get("details"),
+      "",
+      "Sent from your portfolio."
+    ].join("\n");
+
+    try {
+      await navigator.clipboard.writeText(message);
+      formNote.textContent = "Message copied! Open Discord and send it to @itz_55k.exe.";
+    } catch {
+      formNote.textContent = "Your message is ready. Copy the details below and send them to @itz_55k.exe on Discord.";
+      const fallback = document.createElement("textarea");
+      fallback.value = message;
+      fallback.setAttribute("readonly", "");
+      fallback.style.position = "absolute";
+      fallback.style.left = "-9999px";
+      document.body.appendChild(fallback);
+      fallback.select();
+      document.execCommand("copy");
+      fallback.remove();
+    }
+  });
+}
